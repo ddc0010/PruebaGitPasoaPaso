@@ -21,21 +21,21 @@ class TestMinimaNota {
 	    }
 
 	    @Test
-	    void TestMinimaNota1() {
+	    void TestMinimaNotas1() {
 	        int maxEsperado1 = 5;
 	        int maxObtenido1 = MisArrays.maximaNota(array1);
 	        assertEquals(maxEsperado1, maxObtenido1);
 	    }
 
 	    @Test
-	    void TestMinimaNota2() {
+	    void TestMinimaNotas2() {
 	        int maxEsperado2 = 4;
 	        int maxObtenido2 = MisArrays.maximaNota(array2);
 	        assertEquals(maxEsperado2, maxObtenido2);
 	    }
 
 	    @Test
-	    void TestMinimaNota3() {
+	    void TestMinimaNotas3() {
 	        assertThrows(IllegalArgumentException.class, () -> {
 	            MisArrays.maximaNota(array3);
 	        });

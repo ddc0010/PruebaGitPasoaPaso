@@ -20,21 +20,21 @@ class TestMediana {
     }
 
     @Test
-    void testMedianaNotas1() {
+    void testMedianaNota1() {
         float medianaEsperada1 = 8.0f;
         float medianaObtenida1 = MisArrays.medianaNotas(array1);
         assertEquals(medianaEsperada1, medianaObtenida1,0001);
     }
 
     @Test
-    void testMedianaNotas2() {
+    void testMedianaNota2() {
         float medianaEsperada2 = 6.0f;
         float medianaObtenida2 = MisArrays.medianaNotas(array2);
         assertEquals(medianaEsperada2, medianaObtenida2,0001);
     }
 
     @Test
-    void testMedianaNotas3() {
+    void testMedianaNota3() {
         assertThrows(IllegalArgumentException.class, () -> {
             MisArrays.medianaNotas(array3);
         });
