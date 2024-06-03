@@ -20,7 +20,7 @@ public class TestMedia {
         array3 = new int[]{-225, 18, 12, 19, 10};
     }
 	@Test
-	void testMediaNota1() {
+	void testMediaNotas1() {
 		
 		float mediaEsperada1 = 7.8f;
 		float mediaObtenida1 = MisArrays.mediaNotas(array1);
@@ -29,14 +29,14 @@ public class TestMedia {
 		
 	}
 	@Test
-	void testMediaNota2() {
+	void testMediaNotas2() {
 		
 		float mediaEsperada2 = 5.0f;
 		float mediaObtenida2 = MisArrays.mediaNotas(array2);
 		assertEquals(mediaEsperada2, mediaObtenida2,0.001);
 	}
 	@Test
-	void testMediaNota3() {
+	void testMediaNotas3() {
 	
 		assertThrows(IllegalArgumentException.class, () -> MisArrays.mediaNotas(array3));	
 	}

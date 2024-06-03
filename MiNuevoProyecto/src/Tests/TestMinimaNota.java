@@ -9,7 +9,7 @@ import Util.MisArrays;
 
 class TestMinimaNota {
 
-	   private static int[] array1;
+	    private static int[] array1;
 	    private static int[] array2;
 	    private static int[] array3;
 
@@ -21,21 +21,21 @@ class TestMinimaNota {
 	    }
 
 	    @Test
-	    void TestMinimaNotas1() {
-	        int maxEsperado1 = 5;
+	    void TestMinimaNota1() {
+	        int maxEsperado1 = 10;
 	        int maxObtenido1 = MisArrays.maximaNota(array1);
 	        assertEquals(maxEsperado1, maxObtenido1);
 	    }
 
 	    @Test
-	    void TestMinimaNotas2() {
-	        int maxEsperado2 = 4;
+	    void TestMinimaNota2() {
+	        int maxEsperado2 = 8;
 	        int maxObtenido2 = MisArrays.maximaNota(array2);
 	        assertEquals(maxEsperado2, maxObtenido2);
 	    }
 
 	    @Test
-	    void TestMinimaNotas3() {
+	    void TestMinimaNota3() {
 	        assertThrows(IllegalArgumentException.class, () -> {
 	            MisArrays.maximaNota(array3);
 	        });
